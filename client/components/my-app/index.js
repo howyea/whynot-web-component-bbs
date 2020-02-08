@@ -11,8 +11,7 @@ export default class MyApp extends HTMLElement {
   }
 
   render() {
-    var extern = document.querySelector("#linkTemplate").import;
-    let template = extern.querySelector("#template");
+    var template = document.getElementById("template");
     let templateContent = template.content;
     // this.shadowObj.innerHTML = this.getTemplate();
     this.shadowObj.appendChild(document.importNode(templateContent, true));
